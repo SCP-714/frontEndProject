@@ -1,35 +1,43 @@
-//add dj kahlid & another one in button
+let joke1Container = document.querySelector("#firstJoke")
+console.log(joke1Container)
 
-var joke1Container = $("#div1")
-console.log(joke1Container[0])
+let joke2Container = document.querySelector("#secondJoke")
 
-var joke2Container = $("#div2")
-console.log(joke1Container[0])
+let owenCharacter = document.querySelector("#owenCharacter")
 
-var wowContainer = $("#div3")
-console.log(wowContainer[0])
-
-$(".btn").click(function(){
-    fetch('https://geek-jokes.sameerkumar.website/api?format=json')
-    .then((response) => response.json())
-    .then(data =>joke1Container[0].innerText = data.joke)
-});
+let owenVideo = document.querySelector("#owenMovie")
 
 
-    $(".btn2").click(function(){
+    $("#firstJokeButton").click(function(){
         console.log('still working')
-        fetch('https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single')
-  .then((response) => response.json())
-  .then(data =>joke2Container[0].innerText = data.joke);
+        fetch('https://geek-jokes.sameerkumar.website/api?format=json')
+    .then((response) => response.json())
+    .then(data =>joke1Container.innerText = data.joke)
     });
 
 
-    $(".btn3").click(function(){
-    fetch('https://owen-wilson-wow-api.herokuapp.com/wows/random')
+    $("#secondJokeButton").click(function(){
+        console.log('still working')
+        fetch('https://v2.jokeapi.dev/joke/Misc,Programming?format=json&safe-mode&type=single')
     .then((response) => response.json())
-    .then(data =>wowContainer[0].innerText = data[0].full_line);  
-});
+    .then(data =>joke2Container.innerText = data.joke);
+    });
 
 
-    // console.log('still working')
-    // wowContainer[0].innerText = data[0].character
+
+    $("#owenButton").click(function(){
+       $.get('https://owen-wilson-wow-api.herokuapp.com/wows/random',(data) =>owenCharacter.innerText =data[0].character)
+       wowData()
+      });
+    
+
+
+
+     function wowData(data){
+      console.log(data)   
+
+
+    }
+    
+    
+    

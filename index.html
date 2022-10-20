@@ -7,31 +7,64 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>My Front End Project</title>
 </head>
-<body>
-    <div class="container">
-        <h1>Jokes for Dayz</h1>
-        <ul id="list"></ul>
+<body backgroundcolor="lightgrey">
+
+    <nav class="navbar" style="background-color: #12bdc0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="laughlogo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Comedy Club
+          </a>
+        </div>
+      </nav>
+
+
+
+
+    <div class="row col d-flex justify-content-center">
+<div class="card text-center card text-white bg-secondary mb-3" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="Insert An Image SOON"> -->
+    <div class="card-body">
+      <h5 class="card-title">First Joke</h5>
+      <p class="card-text" id="firstJoke"></p>
+      <button class="btn btn-primary" id="firstJokeButton">Click Me For A Joke</button>
     </div>
-    <button id="fetchBtn"
-        class="btn">
-        Another One
-    </button>
-    <button id="fetchBtn"
-    class="btn2">
-    And Another One
-</button>
-<button id="fetchBtn"
-    class="btn3">
-    WoW BuTtOn
-</button>
+  </div>
 
-<div id="div1">INsert ME</div>
-<div id="div2">INsert ME</div>
-<div id="div3">INsert ME</div>
+  <div class="card text-center card text-white bg-secondary mb-3" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="Insert An Image SOON"> -->
+    <div class="card-body">
+      <h5 class="card-title">Second Joke</h5>
+      <p class="card-text" id="secondJoke"></p>
+      <button class="btn btn-primary" id="secondJokeButton">Click Me For A Joke</button>
+    </div>
+  </div>
+
+  <div class="card text-center card text-white bg-secondary mb-3" style="width: 24rem;">
+        <div class="card-body">
+            <h2 class="card-title" id="owenCharacter"></h2>
+            <video width="320" height="240" controls id="owenMovie">
+    <source src="https://videos.ctfassets.net/bs8ntwkklfua/6oSaIzfy7k3DJMvvy3j1kN/d77192d7decb3ba9d06a5210a58df1fa/Midnight_in_Paris_Wow_5_480p.mp4">
+  Your browser does not support the video tag.
+  </video> 
+            <p class="card-text"></p>
+            <button class="btn btn-primary " id ="owenButton">Click Me For An Owen Wilson Character</button>
+        </div>
+    </div>
+    </div>
+    
+    
+    
 
 
+  <!-- <video width="320" height="240" controls>
+    <source src="https://videos.ctfassets.net/bs8ntwkklfua/6oSaIzfy7k3DJMvvy3j1kN/d77192d7decb3ba9d06a5210a58df1fa/Midnight_in_Paris_Wow_5_480p.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video> -->
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
